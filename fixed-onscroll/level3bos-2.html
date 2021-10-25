@@ -1,0 +1,789 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="keywords" content="htmlcss bootstrap menu, fixed, after scrolling page, navbar, menu CSS examples" />
+<meta name="description" content="Bootstrap 5 fixed navbar on scroll page examples, Bootstrap 5" />  
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+<!-- testimonials ----- -->
+
+<!-- back to top -->
+<link rel="stylesheet" href="/CSS/backtotop.css">
+<!-- contact form -->
+<link rel="stylesheet" href="/CSS/contactform.css">
+<link rel="stylesheet" href="/CSS/transition.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Oswald:500" rel="stylesheet">
+
+<link rel="stylesheet" href="/CSS/Search.css">
+
+<script>!function(e){"undefined"==typeof module?this.charming=e:module.exports=e}(function(e,n){"use strict";n=n||{};var t=n.tagName||"span",o=null!=n.classPrefix?n.classPrefix:"char",r=1,a=function(e){for(var n=e.parentNode,a=e.nodeValue,c=a.length,l=-1;++l<c;){var d=document.createElement(t);o&&(d.className=o+r,r++),d.appendChild(document.createTextNode(a[l])),n.insertBefore(d,e)}n.removeChild(e)};return function c(e){for(var n=[].slice.call(e.childNodes),t=n.length,o=-1;++o<t;)c(n[o]);e.nodeType===Node.TEXT_NODE&&a(e)}(e),e});
+</script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<link rel="stylesheet" href="/CSS/slider.css">
+<link rel="stylesheet" href="/CSS/Style-level3.css">
+
+<title>Demo - Bootstrap 5 fixed top header on page scroll. html code example</title>
+
+
+
+</head>
+<body>
+
+<div class="bg-warningg ">
+	<div class="container-fluid">
+		<div class="row pl-5 pr-5 ">
+			
+			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 ">
+				<div class="bs-example">
+					<span>
+						<ul class="">
+							<li class="list-inline-item"><i class="fa fa-phone"></i> 123-45-678</li>
+							<li class="list-inline-item"><i class="fas fa-envelope"></i>mobilelink@gmail.com</li>
+							<li class="list-inline-item"><i class="fas fa-envelope"></i>mobilelink@gmail.com</li>
+							
+						</ul>
+					</span>
+				</div>
+				
+			</div>
+			
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center">
+				<div class="bs-example">
+					<span >
+						<ul class="">
+							<li class="list-inline-item"><i class="fab fa-twitter"></i></li>
+							<li class="list-inline-item"><i class="fab fa-facebook-f"></i></li>
+						</ul>
+					</span>
+				</div>
+				
+			</div>
+			
+		
+		
+		
+			
+		
+	
+		
+			
+		</div>
+	</div>
+</div>
+
+<!-- ============= COMPONENT ============== -->
+<nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark ">
+ <div class="container">
+ 	 <a class="navbar-brand" href="#"><img src="/Images/random logo.png" width="83px" height="50px" alt=""></a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="main_nav">
+	
+
+	<ul class="navbar-nav ms-auto">
+		<li class="nav-item"><a class="nav-link btn btn-2" href="#"> Home </a></li>
+		<li class="nav-item"><a class="nav-link btn btn-2" href="#"> About Us </a></li>
+		<li class="nav-item"><a class="nav-link btn btn-2" href="#"> Career </a></li>
+		<li class="nav-item dropdown has-megamenu">
+			<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Services  </a>
+			<div class="dropdown-menu megamenu" role="menu">
+				<div class="row g-3">
+					<div class="col-lg-3 col-6">
+						<div class="col-megamenu">
+							<h6 class="title">Title Menu One</h6>
+							<ul class="list-unstyled">
+								<li><a href="#">Accounting Services</a></li>
+								<li><a href="#">Out Sourcing</a></li>
+								<li><a href="#">CCTV Camera Monitoring</a></li>
+								<li><a href="#">Banking Services</a></li>
+							
+							</ul>
+						</div>  <!-- col-megamenu.// -->
+					</div><!-- end col-3 -->
+					<div class="col-lg-3 col-6">
+						<div class="col-megamenu">
+							<h6 class="title">&nbsp;</h6>
+							<ul class="list-unstyled">
+								<li><a href="#">Reporting Services</a></li>
+								<li><a href="#">IT OutSourcing</a></li>
+								<li><a href="#">Background Checking and Out Boarding</a></li>
+						
+							</ul>
+						</div>  <!-- col-megamenu.// -->
+					</div><!-- end col-3 -->
+					<div class="col-lg-3 col-6">
+						<div class="col-megamenu">
+							<h6 class="title">Managements Services</h6>
+							<ul class="list-unstyled">
+								<li><a href="#">Maintenance Management</a></li>
+								<li><a href="#">Payroll Management</a></li>
+								<li><a href="#">Supplier Management</a></li>
+								<li><a href="#">Commissions And Incentives Management</a></li>
+							
+							</ul>
+						</div>  <!-- col-megamenu.// -->
+					</div><!-- end col-3 -->
+					<div class="col-lg-3 col-6">
+						<div class="col-megamenu">
+							<h6 class="title">Other Services</h6>
+							<ul class="list-unstyled">
+								<li><a href="#">Travelling Arrangement</a></li>
+								<li><a href="#">CCTV Camera Monitoring</a></li>
+								<!-- <li><a href="#">Custom Menu</a></li> -->
+								
+							</ul>
+						</div>  <!-- col-megamenu.// -->
+					</div>    
+					
+				</div><!-- end row --> 
+			</div> <!-- dropdown-mega-menu.// -->
+		</li>
+		<li class="nav-item"><a class="nav-link" href="#"> Contact Us </a></li>
+		<li class="nav-item"><a class="" href=""> 
+			<div class="searchBox col-12">
+
+				<input class="searchInput"type="text" name="" placeholder="Search">
+				<button class="searchButton" href="#">
+					
+						<i class="fas fa-search material-icons"></i>
+				
+				</button>
+			</div>		
+		</a></li>
+		<!-- <li class="nav-item dropdown">
+			<a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Dropdown right </a>
+		    <ul class="dropdown-menu dropdown-menu-right">
+			  <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+			  <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+		    </ul>
+		</li> -->
+	</ul>
+
+  </div> <!-- navbar-collapse.// -->
+ </div> <!-- container-fluid.// -->
+</nav>
+<!-- ============= COMPONENT END// ============== -->
+<!-- Slider -->
+
+<section id="slider-height">
+
+    <div class="swiper-container slideshow">
+  
+      <div class="swiper-wrapper">
+  
+        <div class="swiper-slide slide">
+          <div class="slide-image" ><img src="/Images/Slider Pictures/Slider-1.jpg" width="100%" height="100%" alt=""></div>
+          <span class="slide-title">Exotic places</span>
+        </div>
+  
+        <div class="swiper-slide slide">
+          <div class="slide-image"><img src="/Images/Slider Pictures/Slider-2.jpg" width="100%" height="100%" alt=""></div>
+          <span class="slide-title">Meet ocean</span>
+        </div>
+  
+        <div class="swiper-slide slide">
+          <div class="slide-image"> <img src="/Images/Slider Pictures/Slider-3.jpg" width="100%" height="100%" alt=""></div>
+          <span class="slide-title">Around the world</span>
+        </div>
+  
+        <!--         <div class="swiper-slide slide">
+            <div class="slide-imageswiper-lazy" data-background="https://images.unsplash.com/photo-1538083024336-555cf8943ddc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=66b476a51b19889e13182c0e4827af18&auto=format&fit=crop&w=1950&q=80">
+            </div>
+            </div>
+            <span class="slide-title">Exotic places</span>
+          </div>
+        
+          <div class="swiper-slide slide">
+            <div class="slide-image swiper-lazy" data-background="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e07d2457879a4e15577ec75a31023e47&auto=format&fit=crop&w=2134&q=80">
+            </div>
+            <span class="slide-title">Meet ocean</span>
+          </div>
+        
+          <div class="swiper-slide slide">
+            <div class="slide-image swiper-lazy" data-background="https://images.unsplash.com/photo-1482059470115-0aadd6bf6834?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=267bba9a4e280ec64388fe8fb01e9d1b&auto=format&fit=crop&w=1950&q=80">
+            </div>
+            <span class="slide-title">Around the world</span>
+          </div> -->
+  
+      </div>
+  
+      <div class="slideshow-pagination"></div>
+  
+      <div class="slideshow-navigation">
+        <div class="slideshow-navigation-button prev"><span class="fas fa-chevron-left"></span></div>
+        <div class="slideshow-navigation-button next"><span class="fas fa-chevron-right"></span></div>
+      </div>
+  
+    </div>
+  
+  </section>
+<!-- Slider END -->
+ <!-- Section -->
+ <section>
+	<div class="two alt-two">
+		<h1>Our BPO Services
+		  <span>Example Tagline Text</span>
+		</h1>
+	  </div>
+	  <div class="container-md container-fluid" >
+		 
+		<div class="row" >
+			<div class="col-sm-12" >
+			<div class="row">
+				<div class="col-sm cube " style="  height: auto; ">
+					
+					<blockquote class="jumbotron blockquote text-center ">
+					
+						<img src="/Icons/phone-banking.png"  width="70px" height="90px" alt="">
+						
+						<p class="h4">Banking Services</p>
+						<hr>
+						<p  ><small>Banking Services
+							Banking Services is a highly specialized sourcing strategy used by banks and lending institutions to support the business acquisition and account servicing activities associated with the customer lending lifecycle.</small></p>
+						<hr>
+						<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+					
+					</blockquote>
+				
+				</div>
+   				 <div class="col-sm cube " >
+					<blockquote class="jumbotron blockquote  text-center">
+						<img src="/Icons/account services.png"  width="70px" height="90px" alt="">
+					
+						<p class="h4">Accounting Services</p>
+						<hr>
+						<p  ><small>Level3BOS accounting services support organizations to achieve meaningful value cuts while assuring exceptional service excellence through accurate quality assurance methods.</small></p>
+						<hr>
+						<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+					  </blockquote>
+
+					</div>
+					<div class="col-sm cube" >
+						<blockquote class="jumbotron  blockquote text-center">
+
+							<img src="/Icons/technical-support.png"  width="70px" height="90px" alt="">
+							<p class="h4">IT Support</p>
+							<hr>
+							<p  ><small>A-class IT services with an prominence in quality and customer satisfaction. Full-spectrum IT services based on the latest IT trends and technological solutions.</small></p>
+							<hr>
+							<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+						  </blockquote>
+	
+						</div>
+			</div>
+			<div class="row "  >
+				
+				<div class="col-sm cube">
+					<blockquote class="jumbotron  blockquote text-center">
+						<img src="/Icons/business-report.png"  width="70px" height="70px" alt="">
+						<p class="h4">Reporting</p>
+							<hr>
+							<p  ><small>We understand the specific requirements of your business. Our intelligence team are able to focus in-depth analysis to help you grow from every perspective of your business. Moreover, we offer a range of standard solutions
+								 which give perceptibility of the data that is crucial at every level of your business.</small></p>
+						<hr>
+						<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+					  </blockquote>	
+				</div>
+				
+			
+			</div>
+			</div>
+			
+			<!-- <div class="col-sm-4" style="border: 1px solid rgb(219, 86, 86);" >
+				
+				<blockquote class=" blockquote text-center">
+					<p class="h4">h4. Bootstrap heading</p>
+					<hr>
+					<p  ><small>This line of text is meant to be treated as fine print.</small></p>
+					<hr>
+					<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+				  </blockquote>
+			</div> -->
+			<div class="row">
+				
+				<div class=" cube col-xs-6 col-sm-6 col-md-6 col-lg-6" style="  height:auto" >
+					<blockquote class="blockquote jumbotron  text-center">
+						<img src="/Icons/commission.png"  width="70px" height="70px" alt="">
+						<p class="h4">Commissions And Incentives Management</p>
+						<hr>
+						<p  ><small>Commission and Incentive Management is a solution that allows all enterprises to represent all kinds of changeable compensation for employees and partners. We give up-to-date and clear data on earned and expected commission and incentives.</small></p>
+						<hr>
+						<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+					  </blockquote>
+				</div>
+				
+				<div class=" cube col-xs-6 col-sm-6 col-md-6 col-lg-6"   style="height:auto" >
+					<blockquote class="jumbotron blockquote text-center">
+						<img src="/Icons/globe.png"  width="70px" height="70px" alt="">
+						<p class="h4">Traveling Arrangement</p>
+						<hr>
+						<p  ><small>Whether you do booking an unusual holiday or business trip, making travel arrangements can be a burden. It needs time to get the best values and equal logistics for each step of your journey. Level3BOS will give you best services with their professional and vast experience in the same industry.</small></p>
+						<hr>
+						<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+					  </blockquote>	
+				</div>
+				
+			</div>
+		</div>	
+		<!-- <div class=" row">
+			
+			<div class=" jumbotron col-sm-4 " style="border: 2px solid black; background-color: wheat;"   >
+				<blockquote class="blockquote text-center">
+					<p class="h4">h4. Bootstrap heading</p>
+					<hr>
+					<p  ><small>This line of text is meant to be treated as fine print.</small></p>
+					<hr>
+					<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+				  </blockquote>
+			</div>
+			
+			<div class=" jumbotron col-sm-8  " style="border: 2px solid black; background-color: rgb(131, 96, 32);"  >
+				<blockquote class="blockquote text-center">
+					<p class="h4">h4. Bootstrap heading</p>
+					<hr>
+					<p  ><small>This line of text is meant to be treated as fine print.</small></p>
+					<hr>
+					<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+				  </blockquote>
+			</div>
+			
+		</div> -->
+		</div>
+		
+  </section>
+  <!-- Services -->
+  
+  <!-- Sub Services other than management -->
+  <section style="margin-top: 10rem;" >
+	<div class="two alt-two">
+		<h1>Our Management Services
+		  <span>Example Tagline Text</span>
+		</h1>
+	  </div>
+	  <div class="container" >
+		  
+		  <div class="row">
+			  
+			  <div class=" col-sm-4 col-md-4 col-xl-4 col-lg-4 cube" >
+				<blockquote class=" jumbotron blockquote text-center">
+					<img src="/Icons/website-operation-and-maintenance-management-64.png"  width="70px" height="90px" alt="">
+					<p class="h4">Maintenance Management</p>
+					<hr>
+					<p  ><small>Maintaining and observing the position of every operational tool is the solution to avoid unnecessary downtime, circumstances and other disadvantages. We provide our clients with innovative procedures that allow them to place a complete plan in place. Our systems enable our clients to have a summary of their entire curriculum and program.</small></p>
+					<hr>
+					<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+				  </blockquote>
+			  </div>
+			  <div class=" cube  col-sm-4 col-md-4 col-xl-4 col-lg-4 " >
+				<blockquote class="jumbotron blockquote text-center">
+					<img src="/Icons/payroll.png"  width="70px" height="90px" alt="">
+					<p class="h4">Payroll Management</p>
+					<hr>
+					<p  ><small>Payroll management services have a vital benefit for an organization. When outsourced to a professional payroll processing firm, such services not only allow the organization to stay focused on core business processes but also help in assuring employee satisfaction for reliable and timely payroll processing.</small></p>
+					<hr>
+					<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+				  </blockquote>
+			</div>
+			<div class=" cube col-sm-4 col-md-4 col-xl-4 col-lg-4"  >
+				<blockquote class="jumbotron blockquote text-center">
+					<img src="/Icons/management.png"  width="70px" height="90px" alt="">
+					<p class="h4">Suppliers Management</p>
+					<hr>
+					<p  ><small>Don’t settle your productive time for doing supplier management, we are here to measure, analyze, and manage the performance of a supplier’s performance with the very substantial value that will give you way relaxation, alleviate risks, and will drive continuous growth.</small></p>
+					<hr>
+					<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+				  </blockquote> 
+			</div>
+			  
+		  </div>
+		  <div class="row">
+			  
+			<div class=" cube col-xs-12 col-sm-12 col-md-12 col-lg-12"  >
+				<blockquote class="blockquote jumbotron text-center">
+					<img src="/Icons/inventory.png"  width="70px" height="90px" alt="">
+					<p class="h4">Inventory Management</p>
+					<hr>
+					<p  ><small>Inventory management is an inherent part of the internal functioning of a company. From traditional stores to online portals, you need to manage your inventories with deft hands.</small></p>
+					<hr>
+					<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+				  </blockquote>
+			</div>
+			
+			
+		</div>
+	
+	  </div>
+  </section>
+    <!-- Sub Services other than management end -->
+<section>
+	<div class="two alt-two">
+		<h1>Other Services
+		  <span>Example Tagline Text</span>
+		</h1>
+	  </div>
+	<div class="container">
+		<div class="row">
+			<div class="cube col-xs-6 col-sm-6 col-md-6 col-lg-6"   >
+				<blockquote class="blockquote jumbotron text-center">
+					<img src="/Icons/video-camera.png" width="100px" height="120px" alt="">
+					<p class="h4">CCTV Camera Monitoring</p>
+					<hr>
+					<p  ><small>Level3BOS is a leading provider of offsite CCTV monitoring services for commercial and non-commercial assets. Our remote CCTV monitoring enables your site to be monitored 24/7, ensuring onsite security and safety.</small></p>
+					<hr>
+					<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+				  </blockquote>
+		  </div>
+		  <div class=" cube col-xs-6 col-sm-6 col-md-6 col-lg-6" >
+			<blockquote class="blockquote jumbotron text-center">
+				<img src="/Icons/images.png" width="100px" height="120px" alt="">
+				<p class="h4">Background Checking And Onboarding</p>
+				<hr>
+				<p  ><small>Enterprises with huge turnover rates spend an exorbitant sum of money on the hiring and onboarding processes. We are here to provide these services with maintaining an accurate background screening. Your value spends on our services will be worth it.</small></p>
+				<hr>
+				<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+			  </blockquote>
+		  </div>
+		</div>
+	</div>
+</section>
+  <!-- Section: Testimonials v.1 -->
+<section class="text-center ">
+<div class="container">
+	<!-- Section: Testimonials v.1 -->
+<section class="text-center my-5 p-1">
+
+	<!-- Section heading -->
+	<div class="two alt-two">
+		<h1>Our Testimonials
+		  <span>Example Tagline Text</span>
+		</h1>
+	  </div>
+	<!-- <h2 class="h1-responsive font-weight-bold my-5 two alt-two">Our Testimonials</h2> -->
+	<!-- Section description -->
+	<p class="dark-grey-text w-responsive mx-auto mb-5">Our extensive expertise will make sure that yours is a SUCCESS STORY once again!</p>
+  
+	<!-- Grid row -->
+	<div class="row">
+  
+	  <!--Grid column-->
+	  <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+		<!--Card-->
+		<div class="card testimonial-card">
+		  <!--Background color-->
+		  <div class="card-up info-color"></div>
+		  <!--Avatar-->
+		  <div class="avatar mx-auto white">
+			<img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg" width="300" height="400" class="rounded-circle img-fluid">
+		  </div>
+		  <div class="card-body">
+			<!--Name-->
+			<h4 class="font-weight-bold mb-4">David John</h4>
+			<span>Manager</span> 
+			<hr>
+			<!--Quotation-->
+			<p class="dark-grey-text mt-4"><i class="fas fa-quote-left pr-2"></i>“I have had to make a lot of decisions over the last 6 years but I believe that deciding to work with Level3BOS has been one of the best. I have a peace of mind now that I could never have by keeping what you do in-house”</p>
+			
+		</div>
+		</div>
+		<!--Card-->
+	  </div>
+	  <!--Grid column-->
+  
+	  <!--Grid column-->
+	  <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+		<!--Card-->
+		<div class="card testimonial-card">
+		  <!--Background color-->
+		  <div class="card-up blue-gradient">
+		  </div>
+		  <!--Avatar-->
+		  <div class="avatar mx-auto white">
+			<img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg" width="300" height="400" class="rounded-circle img-fluid">
+		  </div>
+		  <div class="card-body spacingg" >
+			<!--Name-->
+			<h4 class="font-weight-bold mb-4">Sarah Laspeberry</h4>
+			<hr>
+			<!--Quotation-->
+			<p class="dark-grey-text mt-4"><i class="fas fa-quote-left pr-2"></i>“I appreciate that Level3BOS is not only efficient and responsive but that they have been excellent at helping us solve problems and adopt new practices.
+			  
+			</p>
+		  </div>
+		</div>
+		<!--Card-->
+	  </div>
+	  <!--Grid column-->
+  
+	  <!--Grid column-->
+	  <div class="col-lg-4 col-md-6">
+		<!--Card-->
+		<div class="card testimonial-card">
+		  <!--Background color-->
+		  <div class="card-up indigo"></div>
+		  <!--Avatar-->
+		  <div class="avatar mx-auto white">
+			<img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" width="300" height="400" class="rounded-circle img-fluid">
+		  </div>
+		  <div class="card-body">
+			<!--Name-->
+			<h4 class="font-weight-bold mb-4">Angela Smith</h4>
+			<span>Accountant</span>
+			<hr>
+			<!--Quotation-->
+			<p class="dark-grey-text mt-4"><i class="fas fa-quote-left pr-2"></i>“We’ve been with Level3BOS since the inception of our firm in 2005. We consider Level3BOS to be our de facto performance department of our firm. Your staff is well-trained, courteous and timely in their communications. We would be happy to refer the service to colleagues in the industry. In fact, we are perplexed as to why anyone would have this type of service in-house.”</p>
+		  </div>
+		</div>
+		<!--Card-->
+	  </div>
+	  <!--Grid column-->
+  
+	</div>
+	<!-- Grid row -->
+  
+  </section>
+  <!-- Section: Testimonials v.1 -->
+</div>
+
+  
+  </section>
+  <!-- Section: Testimonials v.1 -->
+  <!-- end -->
+  <div class="container-fluid contact-form">
+	<div class="contact-image">
+		<!-- <i style=" color: #9cd62e;" class="fas fa-envelope"></i> -->
+		<img src="/Icons/email.png"  alt="rocket_contact"/>
+	</div>
+	<form method="post">
+		<h3>Drop Us a Message</h3>
+	   <div class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+					<input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+				</div>
+				<div class="form-group">
+					<input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+				</div>
+				<div class="form-group">
+					<input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+				</div>
+				
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; margin-left: 10px; height: 150px;"></textarea>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				
+			</div>
+			
+			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+				<div class="form-group">
+					<input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+				</div>	
+			</div>
+			
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				
+			</div>
+			
+			
+		</div>
+	</form>
+
+</div>
+
+<!-- footer -->
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color">
+
+	<!-- Footer Links -->
+	<div class="container-fluid text-center text-md-left">
+  
+	  <!-- Footer links -->
+	  <div class="row text-center text-md-left pb-3">
+  
+		<!-- Grid column -->
+		<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+		  <h6 class="text-uppercase mb-4 font-weight-bold"><img src="/Images/random logo.png" width="120px" height="75px" alt=""></h6>
+		  <p>Level3BOS is a business process centre. Our mission is to assist our clients in achieving their sales and revenue goals. Through excellent customer experience, we will deliver high-value service to our clients in line with their expectations and agreed goals.</p>
+		</div>
+		<!-- Grid column -->
+  
+		<hr class="w-100 clearfix d-md-none">
+  
+		<!-- Grid column -->
+		<div class="col-md-2 col-lg-2 col-xl-2 mx-auto" style="margin-top: 70px;">
+		  <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+		  <p>
+			<a href="#!">MDBootstrap</a>
+		  </p>
+		  <p>
+			<a href="#!">MDWordPress</a>
+		  </p>
+		  <p>
+			<a href="#!">BrandFlow</a>
+		  </p>
+		  <p>
+			<a href="#!">Bootstrap Angular</a>
+		  </p>
+		</div>
+		<!-- Grid column -->
+  
+		<hr class="w-100 clearfix d-md-none">
+  
+		<!-- Grid column -->
+		<div class="col-md-3 col-lg-2 col-xl-2 " style="margin-top: 70px;">
+		  <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+		  <p>
+			<a href="#!">Your Account</a>
+		  </p>
+		  <p>
+			<a href="#!">Become an Affiliate</a>
+		  </p>
+		  <p>
+			<a href="#!">Shipping Rates</a>
+		  </p>
+		  <p>
+			<a href="#!">Help</a>
+		  </p>
+		</div>
+  
+		<!-- Grid column -->
+		<hr class="w-100 clearfix d-md-none">
+  
+		<!-- Grid column -->
+		<div class="col-md-4 col-lg-3 col-xl-3 " style="margin-top: 70px;">
+		  <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+		  <p>
+			<i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+		  <p>
+			<i class="fas fa-envelope mr-3"></i> info@level3bos.com</p>
+		  <p>
+			<p>
+				<i class="fas fa-envelope mr-3"></i>career@level3bos.com</p>
+			  <p>
+			<i class="fas fa-phone mr-3"></i>	021-35853669</p>
+		  </p>
+			<!-- <i class="fas fa-print mr-3"></i> + 01 234 567 89</p> -->
+		</div>
+		<!-- Grid column -->
+		<a id="button"><img src="/Icons/arrow-down-sign-to-navigate.png" style=" width: 18px; height:18px; "  /></a>
+	  </div>
+	  <!-- Footer links -->
+  
+	  <hr>
+  
+	  <!-- Grid row -->
+	  <div class="row d-flex align-items-center">
+  
+		<!-- Grid column -->
+		<div class="col-md-7 col-lg-8 mt-3">
+  
+		  <!--Copyright-->
+		  <p class="text-center text-md-left">© 2021 Level3 Back Office Services.
+			<a href="https://mdbootstrap.com/">
+			  <strong> All Rights Reserved.</strong>
+			</a>
+		  </p>
+  
+		</div>
+		<!-- Grid column -->
+  
+		<!-- Grid column -->
+		<div class="col-md-5 col-lg-4 ml-lg-0">
+  
+		  <!-- Social buttons -->
+		  <div class="text-center text-md-right">
+			<ul class="list-unstyled list-inline">
+			  <li class="list-inline-item">
+				<a class="btn-floating btn-sm rgba-white-slight mx-1">
+				  <i class="fab fa-facebook-f"></i>
+				</a>
+			  </li>
+			  <li class="list-inline-item">
+				<a class="btn-floating btn-sm rgba-white-slight mx-1">
+				  <i class="fab fa-twitter"></i>
+				</a>
+			  </li>
+			  <li class="list-inline-item">
+				<a class="btn-floating btn-sm rgba-white-slight mx-1">
+				  <i class="fab fa-google-plus-g"></i>
+				</a>
+			  </li>
+			  <li class="list-inline-item">
+				<a class="btn-floating btn-sm rgba-white-slight mx-1">
+				  <i class="fab fa-linkedin-in"></i>
+				</a>
+			  </li>
+			</ul>
+		  </div>
+  
+		</div>
+		<!-- Grid column -->
+  
+	  </div>
+	  <!-- Grid row -->
+  
+	</div>
+	<!-- Footer Links -->
+  
+  </footer>
+  <!-- Footer -->
+<!-- footer -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script src="/JS/backtotop.js" ></script>
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(){
+		
+		window.addEventListener('scroll', function() {
+	       
+			if (window.scrollY > 200) {
+				document.getElementById('navbar_top').classList.add('fixed-top');
+				// add padding top to show content behind navbar
+				navbar_height = document.querySelector('.navbar').offsetHeight;
+				document.body.style.paddingTop = navbar_height + 'px';
+			} else {
+			 	document.getElementById('navbar_top').classList.remove('fixed-top');
+				 // remove padding top from body
+				document.body.style.paddingTop = '0';
+			} 
+		});
+	}); 
+	// DOMContentLoaded  end
+</script>
+<script src="/JS/slider2.js" ></script>
+
+
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(){
+        /////// Prevent closing from click inside dropdown
+        document.querySelectorAll('.dropdown-menu').forEach(function(element){
+        	element.addEventListener('click', function (e) {
+        		e.stopPropagation();
+        	});
+        })
+    }); 
+	// DOMContentLoaded  end
+</script>
+
+
+</body>
+</html>

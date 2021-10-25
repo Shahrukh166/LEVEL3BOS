@@ -1,0 +1,69 @@
+
+.contact-form{
+    background-image: url(/Images/pexels-pixabay-326576.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #294c4ba3;
+    background-blend-mode: color;
+    background-size: cover;
+    margin-top: 15%;
+   
+    width: 100%;
+    height: 100%;
+}
+.contact-form .form-control{
+    border-radius:5px;
+    border: 2px solid #83a937;
+}
+.contact-form .form-control:hover{
+    border-radius:5px;
+    border: 2px solid #c2f164;
+}
+
+.contact-image{
+    text-align: center;
+}
+.contact-image img{
+    border-radius: 2rem;
+    width: 10%;
+    margin-top: 5%;
+    /* transform: rotate(29deg); */
+}
+.contact-form form{
+    padding: 14%;
+}
+
+.contact-form h3{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #9fd62e;
+}
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #83a937;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
+.contact-form form {
+    padding: 14%;
+    
+}
+
+.row.d-flex.align-items-center {
+    background-color: #9fd62e6e;
+}
